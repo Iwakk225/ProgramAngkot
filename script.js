@@ -36,3 +36,12 @@ var tambahPenumpang = function(namaPenumpang, penumpang) {
         }
     }
 }
+
+var hapusPenumpang = function(namaPenumpang, penumpang) {
+    // cek apakah angkot kosong
+    if ( Penumpang.length == 0) {
+        // jika angkot kosong, maka tampilkan pesan :
+        console.log('Angkot masih kosong!');
+        return Penumpang;
+    }
+}
