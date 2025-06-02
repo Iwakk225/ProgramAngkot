@@ -43,5 +43,13 @@ var hapusPenumpang = function(namaPenumpang, penumpang) {
         // jika angkot kosong, maka tampilkan pesan :
         console.log('Angkot masih kosong!');
         return Penumpang;
+    } else {
+        for ( var i = 0; i < Penumpang.length; i++) {
+            if ( Penumpang[i] == namaPenumpang) {
+                Penumpang[i] = undefined;
+                // kembalikan isi array & keluar dari function
+                return Penumpang;
+            }
+        }
     }
 }
