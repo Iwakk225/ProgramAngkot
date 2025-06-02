@@ -6,7 +6,7 @@ var tambahPenumpang = function(namaPenumpang, penumpang) {
         //tambah penumpang di awal array
         Penumpang.push(namaPenumpang);
         // kembalikan isi array & keluar dari function
-        return Penumpangenumpang;
+        return Penumpang;
     } else {
         // telusuri semua penumpang di dalam angkot
         for ( var i = 0; i < Penumpang.length; i++) {
