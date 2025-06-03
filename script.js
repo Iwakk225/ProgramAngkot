@@ -45,8 +45,17 @@ var hapusPenumpang = function(namaPenumpang, penumpang) {
         return Penumpang;
     } else {
         for ( var i = 0; i < Penumpang.length; i++) {
+            // jika penumpang yang ingin dihapus ada di dalam angkot
+            // maka hapus penumpang tersebut
             if ( Penumpang[i] == namaPenumpang) {
+                // hapus penumpang dengan mengubah nilainya menjadi undefined
                 Penumpang[i] = undefined;
+                // kembalikan isi array & keluar dari function
+                return Penumpang;
+            } else if ( i == Penumpang.length - 1 ) {
+                // penumpang tidak ditemukan
+                // tampilkan pesan kesalahan
+                console.log(namaPenumpang + ' tidak ditemukan di dalam angkot.');
                 // kembalikan isi array & keluar dari function
                 return Penumpang;
             }
